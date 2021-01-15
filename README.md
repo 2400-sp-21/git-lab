@@ -178,22 +178,25 @@ Git is a free and open source tool (collection of commands) that is used for ver
     * Name your repository `git-lab`
     * Do not select anything else.
     * Click on `Create repository` button.
-    * Now you have an empty repository called `git-lab`. You should see two instructions on how to `push an existing repository from the command line`. These are the commands you need to push your local repository to GitHub.
+    * Now you have an empty repository called `git-lab`. You should see three instructions on how to `push an existing repository from the command line`. These are the commands you need to push your local repository to GitHub.
     * Let's try the commands:
 
 
       ```console
       git remote add origin https://github.com/<user-name>/git-lab.git
-      git push -u origin master
+      git branch -M main
+      git push -u origin main
       ```
 
       or
 
       ```console
       git remote add origin git@github.com:<user-name>/git-lab.git
-      git push -u origin master
+      git branch -M main
+      git push -u origin main
       ```
-
+    > These commands will also rename your `master ` branch to `main`
+    
     Watch the output to make sure you did not get any errors. Your repo should be updated on GitHub. Refresh your browser to see your `README.md` and `answers.md` files on GitHub.
 
     Check the status of your repository. Record the output as **`Answer 9`**.
@@ -247,7 +250,7 @@ The `git clone` command downloads an existing repository to your local machine. 
     * Go to the new repo's directory and issue the `ls -a` command. Record the output as **`Answer 13`**.
     * The file `.gitignore` has a list of files that `git` will ignore when pushing the repo. For example, it ignores executable files.
 
-15. (35 points) Lets create a C++ program in `git-lab2` repository and update the online master branch.
+15. (35 points) Lets create a C++ program in `git-lab2` repository and update the online main branch.
 
     * In your editor, create the file `git-lab-program.cc`.
     * Copy the following code into it
