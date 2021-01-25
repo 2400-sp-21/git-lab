@@ -283,7 +283,7 @@ The `git clone` command downloads an existing repository to your local machine. 
 
         ```console
         g++ -Wall git-lab-program.cc
-        ./a.out
+        ./a.exe or ./a.out
         ```
 
     * Did you get the right output? If not, fix your program and try again
